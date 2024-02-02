@@ -1,5 +1,12 @@
-body, html {
-    height: 99.5%;
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -28,9 +35,8 @@ h5 {
 
 .main {
     position: relative;
-    width: 99%;
-    height: 99%;
-    margin: 0.5%;
+    width: 99vw;
+    height: 99vh;
     border-radius: 50px;
     background: linear-gradient(30deg, #C8C7C3 0%, #953618 35%, #D37E00 65%, #C8C7C3 85%);
     overflow: hidden;
@@ -62,6 +68,15 @@ h5 {
 }
 
 .header_menu h3 {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header_menu h3:hover {
+    color: #ffffff;
+}
+
+.header_menu h3 {
     margin-top: 10%;
     margin-left: 10%;
 }
@@ -82,6 +97,7 @@ h5 {
 }
 
 .center {
+    height: 80%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -149,6 +165,14 @@ h5 {
     height: 140px;
     border-radius: 50px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.10) 80%);
+}
+
+.block_statistics:hover {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.40) 80%);
+}
+
+.transition {
+    transition: 0.5s;
 }
 
 .text_statistics {
@@ -222,7 +246,7 @@ h5 {
 }
 
 .block_right {
-    margin: 0% 20%;
+    margin: 0% 0% 0% 12%;
 }
 
 .block_phone {
@@ -231,24 +255,25 @@ h5 {
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    height: 750px;
-    width: 500px;
+    height: 100%;
+    width: 90%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 85%);
     z-index: 1;
     border-radius: 50px;
 }
 
 .top_dynamic {
-    margin-top: 50px;
-    width: 240px;
-    height: 40px;
+    position: absolute;
+    margin-top: 5%;
+    width: 40%;
+    height: 6%;
     border-radius: 25px;
     background: black;
 }
 
 .block_phone-header {
     width: 100%;
-    margin: 5%;
+    margin: 12% 0%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -314,7 +339,6 @@ h5 {
     overflow: hidden;
     white-space: nowrap;
     border: 1px solid black;
-
 }
 
 .running-text {
@@ -340,3 +364,464 @@ h5 {
         transform: translateX(-115%);
     }
 }
+
+@media (max-width: 1440px) {
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    .big_title {
+        width: 60%;
+    }
+
+    .histogram_title {
+        font-size: 28px;
+    }
+
+    .histogram_one {
+        height: 60px;
+        width: 380px;
+    }
+
+
+    .histogram_two {
+        height: 60px;
+        width: 310px;
+    }
+
+    .block_statistics {
+        margin-top: 20px;
+        width: 400px;
+        height: 110px;
+        border-radius: 50px;
+    }
+
+    .text_statistics {
+        padding: 25px 0px 0px 10px;
+    }
+
+    .link_block {
+        margin-top: 15px;
+        width: 140px;
+        height: 30px;
+        border-radius: 25px;
+    }
+
+    .link_block-img {
+        margin: 4px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .link_block-img img {
+        width: 18px;
+        height: 15px;
+    }
+
+    .link_block a {
+        font-size: 15px;
+    }
+
+
+    .title_user {
+        font-size: 12px;
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .message {
+        font-size: 12px;
+        margin: 4px;
+        padding: 10px;
+    }
+
+    .messages_right {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .phone_button {
+        width: 40%;
+        height: 2%;
+        font-size: 18px;
+        margin: 5px;
+        border-radius: 25px;
+        padding: 12px;
+    }
+
+    .top_dynamic {
+        margin-top: 3%;
+        height: 3%;
+    }
+}
+
+@media (max-width: 1024px) {
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    .big_title {
+        width: 70%;
+    }
+
+    .histogram_title {
+        font-size: 28px;
+    }
+
+    .histogram_one {
+        height: 50px;
+        width: 380px;
+    }
+
+
+    .histogram_two {
+        height: 50px;
+        width: 310px;
+    }
+
+    .block_statistics {
+        margin-top: 20px;
+        width: 400px;
+        height: 110px;
+        border-radius: 50px;
+    }
+
+    .text_statistics {
+        padding: 25px 0px 0px 10px;
+    }
+
+    .link_block {
+        margin-top: 15px;
+        width: 140px;
+        height: 30px;
+        border-radius: 25px;
+    }
+
+    .link_block-img {
+        margin: 4px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .link_block-img img {
+        width: 18px;
+        height: 15px;
+    }
+
+    .link_block a {
+        font-size: 15px;
+    }
+
+
+    .title_user {
+        font-size: 12px;
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .message {
+        font-size: 12px;
+        margin: 4px;
+        padding: 10px;
+    }
+
+    .messages_right {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .phone_button {
+        width: 40%;
+        height: 2%;
+        font-size: 16px;
+        margin: 5px;
+        border-radius: 25px;
+        padding: 12px;
+    }
+
+    .top_dynamic {
+        margin-top: 3%;
+        height: 3%;
+    }
+
+    .row_statistics {
+        flex-direction: column;
+    }
+
+    .message {
+        font-size: 10px;
+        margin: 4px;
+        padding: 8px;
+    }
+
+    .messages_right {
+        margin: 1%;
+    }
+
+    .histogram_title {
+        font-size: 22px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 780px) {
+    .block_right {
+        margin: 0% 0% 0% 5%;
+    }
+
+    .block_phone {
+        width: 98%;
+    }
+
+    .logo h2 {
+        font-size: 38px;
+    }
+
+    .header_logo-img {
+        height: 40px;
+    }
+}
+
+@media (max-height: 780px) {
+
+
+    .block_statistics {
+        margin-top: 10px;
+        width: 350px;
+        height: 90px;
+    }
+
+    .block_statistics {
+        margin-top: 12px;
+        width: 360px;
+        height: 90px;
+    }
+
+    .block_statistics a {
+        font-size: 12px;
+    }
+
+    .text_statistics {
+        padding: 20px 0px 0px 10px;
+    }
+
+    .statistics_center {
+        padding-left: 12%;
+    }
+
+    .footer {
+        height: 20px;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+
+    .running-image {
+        height: 25px;
+    }
+
+    .logo h2 {
+        font-size: 36px;
+    }
+
+    .header_logo-img {
+        height: 60px;
+    }
+
+    .block_phone {
+        width: 75%;
+    }
+
+    .link_block {
+        margin-top: 15px;
+        margin-left: 15px;
+        width: 100px;
+        height: 20px;
+        border-radius: 25px;
+    }
+
+    .link_block-img {
+        margin: 4px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .link_block a {
+        font-size: 9px;
+    }
+
+    .block_statistics {
+        margin-top: 10px;
+        width: 260px;
+        height: 80px;
+    }
+
+    .block_statistics a {
+        font-size: 11px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .histogram_title {
+        font-size: 22px;
+        margin: 10px;
+    }
+
+    .link_block-img img {
+        width: 11px;
+        height: 9px;
+    }
+
+    .block_statistics a {
+        font-size: 10px;
+    }
+
+    .social_media {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .histogram_one {
+        height: 45px;
+        width: 380px;
+    }
+
+    .histogram_two {
+        height: 45px;
+        width: 310px;
+    }
+
+    .center {
+        height: 78%;
+    }
+
+    .block_phone {
+        width: 95%;
+    }
+
+    .block_right {
+        margin: 0% 0% 0% 6%;
+    }
+
+}
+
+@media (max-width: 680px) {
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .center {
+        flex-direction: column;
+    }
+
+    .main {
+        height: 100%;
+    }
+
+    .block_right {
+        margin: 5% 0% 10% 12%;
+    }
+
+    .block_right {
+        margin: 5% 0% 10% 2%;
+    }
+
+    .main_shadow {
+        height: 20%;
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+
+    .block_statistics {
+        margin-top: 20px;
+        width: 300px;
+        height: 110px;
+        border-radius: 50px;
+    }
+
+    .statistics {
+        padding-left: 5%;
+    }
+
+
+    .text_statistics a {
+        font-size: 12px;
+    }
+
+    .main_shadow {
+        height: 20%;
+        display: none;
+    }
+
+    .histogram_one {
+        height: 50px;
+        width: 290px;
+    }
+
+    .histogram_two {
+        height: 50px;
+        width: 250px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    .logo h2 {
+
+        font-size: 38px;
+
+    }
+}
+
+
+
+
