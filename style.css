@@ -67,6 +67,11 @@ h5 {
     margin-right: 10%;
 }
 
+.header_menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .header_menu h3 {
     cursor: pointer;
     transition: 0.5s;
@@ -94,6 +99,56 @@ h5 {
 
 .header_logo-img {
     padding-bottom: 20px;
+}
+
+.toggle_btn {
+    justify-content: center;
+    margin: 3% 10% 0% 0%;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    margin-left: 5%;
+    top: 80px;
+    height: 0px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    color: #ffffff;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    width: 90%;
+    height: 250px;
+    display: none;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.dropdown_menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.dropdown_menu {
+    width: 100%;
+    display: flex;
+
+    justify-content: center
 }
 
 .center {
@@ -258,7 +313,6 @@ h5 {
     height: 100%;
     width: 90%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 85%);
-    z-index: 1;
     border-radius: 50px;
 }
 
@@ -587,6 +641,31 @@ h5 {
 }
 
 @media (max-width: 780px) {
+    .dropdown_menu.open {
+        display: flex;
+    }
+
+    .toggle_btn {
+        display: flex;
+        justify-content: center;
+        margin: 3% 10% 0% 0%;
+        color: #ffffff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .dropdown_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .header_menu {
+        display: none;
+    }
+
     .block_right {
         margin: 0% 0% 0% 5%;
     }
@@ -602,6 +681,7 @@ h5 {
     .header_logo-img {
         height: 40px;
     }
+
 }
 
 @media (max-height: 780px) {
