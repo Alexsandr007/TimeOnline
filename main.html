@@ -20,7 +20,7 @@
             <h2>Time<img src="img/logo.png" class="header_logo-img">nline</h2>
         </div>
         <div class="header_menu">
-            <h3><a href="">Главная</a></h3>
+            <h3><a href="main.html">Главная</a></h3>
             <h3><a href="">Регистрация</a></h3>
             <h3><a href="">Вход</a></h3>
         </div>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="dropdown_menu">
-            <a href=""><h3>Главная</h3></a>
+            <a href="main.html"><h3>Главная</h3></a>
             <a href=""><h3>Регистрация</h3></a>
             <a href=""><h3>Вход</h3></a>
         </div>
@@ -122,7 +122,7 @@
         </div>
     </div>
     <div class="footer" id="footer">
-        <a href="#">
+        <a href="privacyPolicy.html">
             <div class="running-text">
                 <a>© 2023 Time-Online.By Политика конфиденциальности</a><img src="img/footerStar.png"
                                                                              class="running-image">
@@ -132,10 +132,13 @@
             </div>
         </a>
     </div>
-
 </div>
 
 <script>
+        document.getElementById("footer").addEventListener("click", function () {
+        window.location.href = "privacyPolicy.html";
+    });
+
     const toggleBtn = document.querySelector('.toggle_btn')
     const toggleBtnIcon = document.querySelector('.toggle_btn i')
     const dropDownMenu = document.querySelector('.dropdown_menu')
