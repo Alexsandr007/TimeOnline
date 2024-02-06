@@ -48,7 +48,38 @@
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
 }
+
+.button:hover{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.block_auth p{
+    margin: 10px 50px;
+    padding-left: 90px;
+    transition: 0.3s;
+
+}
+
+.block_auth a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text_color-black{
+    color: black;
+}
+
+.text_color-white{
+    color: #ffffff;
+}
+
+.block_auth p:hover{
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 580px) {
 .block_auth {
