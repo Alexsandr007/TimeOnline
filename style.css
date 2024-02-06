@@ -531,6 +531,12 @@ h5 {
 
 /*END CAROUSEL IN PRIVACY POLICY*/
 
+.button{
+    width: 300px;
+    height: 20px;
+
+}
+
 
 @keyframes running-text {
     0% {
