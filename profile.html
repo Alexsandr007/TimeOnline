@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+<body>
+
+<div class="main">
+    <div class="main_shadow"></div>
+    <div class="header">
+        <div class="logo">
+            <h2>Time<img src="img/logo.png" class="header_logo-img">nline</h2>
+        </div>
+        <div class="user_block">
+            <div class="user_container">
+                <div class="user_container-text">
+                    <h4>Login</h4>
+                    <p>150000.00</p>
+                </div>
+                <img class="user_container-icon" src="img/user_icon.png">
+
+            </div>
+        </div>
+        <!--        <div class="header_menu">-->
+        <!--            <h3><a href="main.html">Главная</a></h3>-->
+        <!--            <h3><a href="registration.html">Регистрация</a></h3>-->
+        <!--            <h3><a href="login.html">Вход</a></h3>-->
+        <!--        </div>-->
+        <!--        <div class="toggle_btn">-->
+        <!--            <i class="fa-solid fa-bars"></i>-->
+        <!--        </div>-->
+
+        <!--        <div class="dropdown_menu">-->
+        <!--            <a href="main.html"><h3>Главная</h3></a>-->
+        <!--            <a href="registration.html"><h3>Регистрация</h3></a>-->
+        <!--            <a href="login.html"><h3>Вход</h3></a>-->
+        <!--        </div>-->
+    </div>
+
+    <div class="center_profile">
+        <div class="menu">
+            <a href="profile.html">Личный кабинет</a>
+            <div class="container_dropdown">
+                <a onclick="selectorMenu(1)">Площадки<img class="arrow-active" id="menu1" src="img/arrow.png"></a>
+                <div class="dropdown_menu" id="11">
+                    <a href="">TimeOnline</a>
+                    <a href="">HappyTime</a>
+                    <a href="">DragonTime</a>
+                </div>
+            </div>
+            <div class="container_dropdown">
+                <a onclick="selectorMenu(2)">Структура и команда<img class="arrow-default" id="menu2"
+                                                                     src="img/arrow.png"></a>
+                <div class="dropdown_menu" id="22">
+                    <a href="">Поиск по структуре</a>
+                    <a href="">Ваши рефералы</a>
+                    <a href="">Клоны</a>
+                </div>
+            </div>
+            <div class="container_dropdown">
+                <a onclick="selectorMenu(3)">Работа со средствами<img class="arrow-default" id="menu3"
+                                                                      src="img/arrow.png"></a>
+                <div class="dropdown_menu" id="33">
+                    <a href="">Пополнение</a>
+                    <a href="">Вывод средств</a>
+                    <a href="">Внутренний перевод</a>
+                    <a href="">История операций</a>
+                </div>
+            </div>
+            <div class="container_dropdown">
+                <a onclick="selectorMenu(4)">Страницы<img class="arrow-default" id="menu4" src="img/arrow.png"></a>
+                <div class="dropdown_menu" id="44">
+                    <a href="">AirTime</a>
+                    <a href="">SkillTime</a>
+                    <a href="">TimeForGood</a>
+                    <a href="">BookTime</a>
+                </div>
+            </div>
+            <div class="container_dropdown">
+                <a onclick="selectorMenu(5)">Админ панель<img class="arrow-default" id="menu5" src="img/arrow.png"></a>
+                <div class="dropdown_menu" id="55">
+                    <a href="">Заявки на вывод</a>
+                    <a href="">Статистика</a>
+                    <a href="">Смена данных</a>
+                    <a href="">Выводы</a>
+                    <a href="">История изменений</a>
+                    <a href="">Внутренние переводы</a>
+                    <a href="">Пополнения</a>
+                    <a href="">Подарочные клоны</a>
+                </div>
+            </div>
+            <a href="main.html">Выход</a>
+        </div>
+
+    </div>
+
+
+    <div class="footer" id="footer">
+        <a href="privacyPolicy.html">
+            <div class="running-text">
+                <a>© 2023 Time-Online.By Политика конфиденциальности</a><img src="img/footerStar.png"
+                                                                             class="running-image">
+                <a>© 2023 Time-Online.By Политика конфиденциальности</a><img src="img/footerStar.png"
+                                                                             class="running-image">
+                <a>© 2023 Time-Online.By Политика конфиденциальности<a/>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script>
+    document.getElementById("footer").addEventListener("click", function () {
+        window.location.href = "privacyPolicy.html";
+    });
+
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+    }
+
+    function selectorMenu(condition) {
+        switch (condition) {
+            case 1:
+                const menu1 = document.getElementById("11")
+                const Icon1 = document.getElementById("menu1")
+                menu1.classList.toggle('open_menu')
+                const isOpen1 = menu1.classList.contains('open_menu')
+
+                Icon1.classList = isOpen1
+                    ? 'arrow-active'
+                    : 'arrow-default'
+
+                if (isOpen1) {
+                    menu1.style.display = 'flex';
+                } else {
+                    menu1.style.display = 'none';
+                }
+
+                break;
+            case 2:
+                const menu2 = document.getElementById("22")
+                const Icon2 = document.getElementById("menu2")
+                menu2.classList.toggle('open_menu')
+                const isOpen2 = menu2.classList.contains('open_menu')
+
+                Icon2.classList = isOpen2
+                    ? 'arrow-active'
+                    : 'arrow-default'
+                if (isOpen2) {
+                    menu2.style.display = 'flex';
+                } else {
+                    menu2.style.display = 'none';
+                }
+                break;
+            case 3:
+                const menu3 = document.getElementById("33")
+                const Icon3 = document.getElementById("menu3")
+                menu3.classList.toggle('open_menu')
+                const isOpen3 = menu3.classList.contains('open_menu')
+
+                Icon3.classList = isOpen3
+                    ? 'arrow-active'
+                    : 'arrow-default'
+                if (isOpen3) {
+                    menu3.style.display = 'flex';
+                } else {
+                    menu3.style.display = 'none';
+                }
+                break;
+            case 4:
+                const menu4 = document.getElementById("44")
+                const Icon4 = document.getElementById("menu4")
+                menu4.classList.toggle('open_menu')
+                const isOpen4 = menu4.classList.contains('open_menu')
+
+                Icon4.classList = isOpen4
+                    ? 'arrow-active'
+                    : 'arrow-default'
+                if (isOpen4) {
+                    menu4.style.display = 'flex';
+                } else {
+                    menu4.style.display = 'none';
+                }
+                break;
+            case 5:
+                const menu5 = document.getElementById("55")
+                const Icon5 = document.getElementById("menu5")
+                menu5.classList.toggle('open_menu')
+                const isOpen5 = menu5.classList.contains('open_menu')
+
+                Icon5.classList = isOpen5
+                    ? 'arrow-active'
+                    : 'arrow-default'
+                if (isOpen5) {
+                    menu5.style.display = 'flex';
+                } else {
+                    menu5.style.display = 'none';
+                }
+                break;
+            default:
+                // Действия, выполняемые при отсутствии подходящего условия
+                break;
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
+

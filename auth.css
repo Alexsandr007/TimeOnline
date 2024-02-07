@@ -1,4 +1,4 @@
-.main{
+.main {
     height: 100vh;
 }
 
@@ -19,16 +19,17 @@
     border-radius: 50px;
     border: solid 3px #ffffff;
     padding: 20px 20px;
+    margin-top: 5%;
 }
 
-.place_image{
+.place_image {
     margin: 10px 0px 10px 180px;
     width: 200px;
     height: 100px;
     border: solid 1px #ffffff;
 }
 
-.block_auth input{
+.block_auth input {
     border-radius: 50px;
     width: 430px;
     height: 40px;
@@ -38,7 +39,7 @@
     padding-left: 20px;
 }
 
-.button{
+.button {
     border-radius: 50px;
     width: 450px;
     height: 40px;
@@ -52,66 +53,66 @@
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     background: rgba(0, 0, 0, 0.6);
 }
 
-.block_auth p{
+.block_auth p {
     margin: 10px 50px;
     padding-left: 90px;
     transition: 0.3s;
 
 }
 
-.block_auth a{
+.block_auth a {
     cursor: pointer;
     text-decoration: none;
 }
 
-.text_color-black{
+.text_color-black {
     color: black;
 }
 
-.text_color-white{
+.text_color-white {
     color: #ffffff;
 }
 
-.block_auth p:hover{
+.block_auth p:hover {
     transform: scale(1.1);
 }
 
 
 @media (max-width: 580px) {
-.block_auth {
-    width: 300px;
- }
+    .block_auth {
+        width: 300px;
+    }
 
-.place_image{
-    margin: 10px 0px 10px 50px;
-    width: 200px;
-    height: 100px;
-    border: solid 1px #ffffff;
-}
+    .place_image {
+        margin: 10px 0px 10px 50px;
+        width: 200px;
+        height: 100px;
+        border: solid 1px #ffffff;
+    }
 
-.block_auth input{
-    border-radius: 50px;
-    width: 240px;
-    height: 40px;
-    margin: 10px 20px;
-    border: solid 2px #ffffff;
-    background: #ffffff;
-    padding-left: 20px;
-}
+    .block_auth input {
+        border-radius: 50px;
+        width: 240px;
+        height: 40px;
+        margin: 10px 20px;
+        border: solid 2px #ffffff;
+        background: #ffffff;
+        padding-left: 20px;
+    }
 
-.button{
-    border-radius: 50px;
-    width: 260px;
-    height: 40px;
-    margin: 10px 20px;
-    border: none;
-    background: rgba(0, 0, 0, 0.3);
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 500;
-}
+    .button {
+        border-radius: 50px;
+        width: 260px;
+        height: 40px;
+        margin: 10px 20px;
+        border: none;
+        background: rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+    }
 }
