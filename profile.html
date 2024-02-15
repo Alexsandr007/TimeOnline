@@ -30,27 +30,13 @@
 
             </div>
         </div>
-        <!--        <div class="header_menu">-->
-        <!--            <h3><a href="main.html">Главная</a></h3>-->
-        <!--            <h3><a href="registration.html">Регистрация</a></h3>-->
-        <!--            <h3><a href="login.html">Вход</a></h3>-->
-        <!--        </div>-->
-        <!--        <div class="toggle_btn">-->
-        <!--            <i class="fa-solid fa-bars"></i>-->
-        <!--        </div>-->
-
-        <!--        <div class="dropdown_menu">-->
-        <!--            <a href="main.html"><h3>Главная</h3></a>-->
-        <!--            <a href="registration.html"><h3>Регистрация</h3></a>-->
-        <!--            <a href="login.html"><h3>Вход</h3></a>-->
-        <!--        </div>-->
     </div>
 
     <div class="center_profile">
         <div class="menu">
             <a href="profile.html">Личный кабинет</a>
             <div class="container_dropdown">
-                <a onclick="selectorMenu(1)">Площадки<img class="arrow-active" id="menu1" src="img/arrow.png"></a>
+                <a onclick="selectorMenu(1)">Площадки<img class="arrow-default" id="menu1" src="img/arrow.png"></a>
                 <div class="dropdown_menu" id="11">
                     <a href="">TimeOnline</a>
                     <a href="">HappyTime</a>
@@ -100,6 +86,186 @@
             </div>
             <a href="main.html">Выход</a>
         </div>
+        <div class="header"></div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="menu_mobile">
+            <div class="container_text">
+                <a class="start" href="profile.html">Личный кабинет</a>
+            </div>
+            <div class="Mobile-container_dropdown">
+                <a onclick="selectorMobileMenu(1)">Площадки<img class="Mobile_arrow-default" id="Mmenu1"
+                                                                src="img/arrow.png"></a>
+                <div class="Mobile-dropdown_menu" id="m11">
+                    <a href="">TimeOnline</a>
+                    <a href="">HappyTime</a>
+                    <a href="">DragonTime</a>
+                </div>
+            </div>
+            <div class="Mobile-container_dropdown">
+                <a onclick="selectorMobileMenu(2)">Структура и команда<img class="Mobile_arrow-default" id="Mmenu2"
+                                                                           src="img/arrow.png"></a>
+                <div class="Mobile-dropdown_menu" id="m22">
+                    <a href="">Поиск по структуре</a>
+                    <a href="">Ваши рефералы</a>
+                    <a href="">Клоны</a>
+                </div>
+            </div>
+            <div class="Mobile-container_dropdown">
+                <a onclick="selectorMobileMenu(3)">Работа со средствами<img class="Mobile_arrow-default" id="Mmenu3"
+                                                                            src="img/arrow.png"></a>
+                <div class="Mobile-dropdown_menu" id="m33">
+                    <a href="">Пополнение</a>
+                    <a href="">Вывод средств</a>
+                    <a href="">Внутренний перевод</a>
+                    <a href="">История операций</a>
+                </div>
+            </div>
+            <div class="Mobile-container_dropdown">
+                <a onclick="selectorMobileMenu(4)">Страницы<img class="Mobile_arrow-default" id="Mmenu4"
+                                                                src="img/arrow.png"></a>
+                <div class="Mobile-dropdown_menu" id="m44">
+                    <a href="">AirTime</a>
+                    <a href="">SkillTime</a>
+                    <a href="">TimeForGood</a>
+                    <a href="">BookTime</a>
+                </div>
+            </div>
+            <div class="Mobile-container_dropdown">
+                <a onclick="selectorMobileMenu(5)">Админ панель<img class="Mobile_arrow-default" id="Mmenu5"
+                                                                    src="img/arrow.png"></a>
+                <div class="Mobile-dropdown_menu" id="m55">
+                    <a href="">Заявки на вывод</a>
+                    <a href="">Статистика</a>
+                    <a href="">Смена данных</a>
+                    <a href="">Выводы</a>
+                    <a href="">История изменений</a>
+                    <a href="">Внутренние переводы</a>
+                    <a href="">Пополнения</a>
+                    <a href="">Подарочные клоны</a>
+                </div>
+            </div>
+            <div class="container_text">
+                <a class="end" href="main.html">Выход</a>
+            </div>
+        </div>
+        <div class="block_information-user">
+            <div class="row_top">
+                <div class="block_data">
+                    <div class="text_left">
+                        <p>Ваши данные</p>
+                        <p>ID:</p>
+                        <p>Логин:</p>
+                        <p>Почта:</p>
+                        <p>Имя:</p>
+                        <p>Дата регистрации:</p>
+                        <p>Активных матриц</p>
+                        <p>Статус</p>
+                    </div>
+                    <div class="text_right">
+
+                        <p># 4535643</p>
+                        <p>Maksimo</p>
+                        <p>yrdtufygu@mail.ru</p>
+                        <p>Максим Воронов</p>
+                        <p>05.06.2003</p>
+                        <p>134</p>
+                        <p>Активирован</p>
+                    </div>
+
+                </div>
+                <div class="block_refs">
+                    <h5>Реферальная ссылка</h5>
+                    <div class="block_refs-images">
+                        <a href="#"><img src="img/vk_ref.png"></a>
+                        <a href="#"><img src="img/tg.png"></a>
+                        <a href="#"><img src="img/twitter.png"></a>
+                        <a href="#"><img src="img/viber.png"></a>
+                        <a href="#"><img src="img/whatsapp.png"></a>
+                    </div>
+                    <input>
+                    <button>Скопировать ссылку</button>
+                </div>
+                <div class="block_change-image block_desktop">
+                    <h5>Установка аватарки</h5>
+                    <div class="block_change">
+                        <p>Загрузка фото до 10 мб</p>
+                        <button>Выбрать</button>
+                    </div>
+                    <button>Телеграмм бот</button>
+                    <button>Тех. Поддержка<br><a>maintenance.time.online@gmail.com<a/></button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="block_change-image block_mobile">
+                    <h3>Установка аватарки</h3>
+                    <div class="block_change">
+                        <h2>Загрузка фото до 10 мб</h2>
+                        <button>Выбрать</button>
+                    </div>
+                    <button>Телеграмм бот</button>
+                    <button>Тех. Поддержка<br><a>maintenance.time.online@gmail.com<a/></button>
+                </div>
+            </div>
+            <div class="row_down">
+                <div class="block_fin-pass">
+                    <h5>Установка финансового пароля</h5>
+                    <input>
+                    <a>Ваш финансовый пароль уже установлен, теперь вы можете сменить фин. пароль только через функцию
+                        восстановления пароля.
+                    </a>
+                    <div class="block_stats">
+                        <h5>Активных рефералов </h5>
+                        <h5 class="title_second">103</h5>
+                        <h5>Неактивных рефералов </h5>
+                        <h5 class="title_second">377</h5>
+                        <h5>Баланс </h5>
+                        <h5 class="title_second">8 715.00 ₽</h5>
+                        <h5>Заработано </h5>
+                        <h5 class="title_second">681 610 ₽</h5>
+                    </div>
+                </div>
+                <div class="block_change-pass">
+                    <div class="block_avatar">
+                        <img src="img/user_icon.png">
+                        <h2>Login</h2>
+                        <p>100 000.00</p>
+                    </div>
+                    <div class="change-pass">
+                        <h5>Смена пароля</h5>
+                        <input>
+                        <a>Пароль, установленный в профиле на данный момент</a>
+                        <input>
+                        <a>Пароль, который будет установлен у вас после сохранения</a>
+                        <button>Сменить пароль</button>
+                    </div>
+                </div>
+                <div class="block_links block_desktop">
+                    <h5>Данные по которым с вами можно связаться</h5>
+                    <input>
+                    <a>Ссылка на ваш аккаунт Вконтакте</a>
+                    <input>
+                    <a>Ссылка на ваш аккаунт Телеграмм</a>
+                    <input>
+                    <a>Ссылка на ваш аккаунт WhatsApp</a>
+                    <button>Сохранить</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="block_links block_mobile">
+                    <h5>Данные по которым с вами можно связаться</h5>
+                    <input>
+                    <a>Ссылка на ваш аккаунт Вконтакте</a>
+                    <input>
+                    <a>Ссылка на ваш аккаунт Телеграмм</a>
+                    <input>
+                    <a>Ссылка на ваш аккаунт WhatsApp</a>
+                    <button>Сохранить</button>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -122,103 +288,105 @@
         window.location.href = "privacyPolicy.html";
     });
 
+    function isOpen(isOpen, menu, Icon) {
+        Icon.classList = isOpen ? 'arrow-active' : 'arrow-default';
+        menu.style.display = isOpen ? 'flex' : 'none';
+    }
+
+    var menus = [
+        {
+            menu: document.getElementById("11"),
+            icon: document.getElementById("menu1"),
+            isOpen: false
+        },
+        {
+            menu: document.getElementById("22"),
+            icon: document.getElementById("menu2"),
+            isOpen: false
+        },
+        {
+            menu: document.getElementById("33"),
+            icon: document.getElementById("menu3"),
+            isOpen: false
+        },
+        {
+            menu: document.getElementById("44"),
+            icon: document.getElementById("menu4"),
+            isOpen: false
+        },
+        {
+            menu: document.getElementById("55"),
+            icon: document.getElementById("menu5"),
+            isOpen: false
+        }
+    ];
+
+    function selectorMenu(condition) {
+        // Закрываем все меню
+        const selectedMenu = menus[condition - 1];
+        for (const menu of menus) {
+            if (menu.menu.classList.contains("open_menu") && menu.isOpen == true && menu.menu != selectedMenu.menu) {
+                menu.menu.classList.toggle('open_menu');
+                menu.isOpen = false;
+                isOpen(menu.isOpen, menu.menu, menu.icon);
+            }
+        }
+
+        // Открываем выбранное меню и обновляем его состояние
+        if (condition >= 1 && condition <= 5) {
+            selectedMenu.menu.classList.toggle('open_menu');
+            selectedMenu.isOpen = selectedMenu.menu.classList.contains('open_menu');
+            isOpen(selectedMenu.isOpen, selectedMenu.menu, selectedMenu.icon);
+        }
+    }
+
+    function MobileIsOpen(IsOpen, menu, Icon) {
+        Icon.classList = IsOpen
+            ? 'Mobile_arrow-active'
+            : 'Mobile_arrow-default'
+        if (IsOpen) {
+            menu.style.display = 'flex';
+        } else {
+            menu.style.display = 'none';
+        }
+    }
+
+    var menusMobile = [
+        {menu: document.getElementById("m11"), icon: document.getElementById("Mmenu1"), isOpen: false},
+        {menu: document.getElementById("m22"), icon: document.getElementById("Mmenu2"), isOpen: false},
+        {menu: document.getElementById("m33"), icon: document.getElementById("Mmenu3"), isOpen: false},
+        {menu: document.getElementById("m44"), icon: document.getElementById("Mmenu4"), isOpen: false},
+        {menu: document.getElementById("m55"), icon: document.getElementById("Mmenu5"), isOpen: false}
+    ];
+
+    function selectorMobileMenu(condition) {
+        const selectedMenu = menusMobile[condition - 1];
+        for (const menu of menusMobile) {
+            if (menu.menu.classList.contains("open") && menu.isOpen == true && menu.menu != selectedMenu.menu) {
+                menu.menu.classList.toggle('open');
+                menu.isOpen = false;
+                MobileIsOpen(menu.isOpen, menu.menu, menu.icon);
+            }
+        }
+        // Открываем выбранное меню и обновляем его состояние
+        if (condition >= 1 && condition <= 5) {
+            selectedMenu.menu.classList.toggle('open');
+            selectedMenu.isOpen = selectedMenu.menu.classList.contains('open');
+            MobileIsOpen(selectedMenu.isOpen, selectedMenu.menu, selectedMenu.icon);
+        }
+    }
+
     const toggleBtn = document.querySelector('.toggle_btn')
     const toggleBtnIcon = document.querySelector('.toggle_btn i')
-    const dropDownMenu = document.querySelector('.dropdown_menu')
+    const menu_mobile = document.querySelector('.menu_mobile')
 
     toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
+        menu_mobile.classList.toggle('open')
+        const isOpen = menu_mobile.classList.contains('open')
 
         toggleBtnIcon.classList = isOpen
             ? 'fa-solid fa-xmark'
             : 'fa-solid fa-bars'
-    }
-
-    function selectorMenu(condition) {
-        switch (condition) {
-            case 1:
-                const menu1 = document.getElementById("11")
-                const Icon1 = document.getElementById("menu1")
-                menu1.classList.toggle('open_menu')
-                const isOpen1 = menu1.classList.contains('open_menu')
-
-                Icon1.classList = isOpen1
-                    ? 'arrow-active'
-                    : 'arrow-default'
-
-                if (isOpen1) {
-                    menu1.style.display = 'flex';
-                } else {
-                    menu1.style.display = 'none';
-                }
-
-                break;
-            case 2:
-                const menu2 = document.getElementById("22")
-                const Icon2 = document.getElementById("menu2")
-                menu2.classList.toggle('open_menu')
-                const isOpen2 = menu2.classList.contains('open_menu')
-
-                Icon2.classList = isOpen2
-                    ? 'arrow-active'
-                    : 'arrow-default'
-                if (isOpen2) {
-                    menu2.style.display = 'flex';
-                } else {
-                    menu2.style.display = 'none';
-                }
-                break;
-            case 3:
-                const menu3 = document.getElementById("33")
-                const Icon3 = document.getElementById("menu3")
-                menu3.classList.toggle('open_menu')
-                const isOpen3 = menu3.classList.contains('open_menu')
-
-                Icon3.classList = isOpen3
-                    ? 'arrow-active'
-                    : 'arrow-default'
-                if (isOpen3) {
-                    menu3.style.display = 'flex';
-                } else {
-                    menu3.style.display = 'none';
-                }
-                break;
-            case 4:
-                const menu4 = document.getElementById("44")
-                const Icon4 = document.getElementById("menu4")
-                menu4.classList.toggle('open_menu')
-                const isOpen4 = menu4.classList.contains('open_menu')
-
-                Icon4.classList = isOpen4
-                    ? 'arrow-active'
-                    : 'arrow-default'
-                if (isOpen4) {
-                    menu4.style.display = 'flex';
-                } else {
-                    menu4.style.display = 'none';
-                }
-                break;
-            case 5:
-                const menu5 = document.getElementById("55")
-                const Icon5 = document.getElementById("menu5")
-                menu5.classList.toggle('open_menu')
-                const isOpen5 = menu5.classList.contains('open_menu')
-
-                Icon5.classList = isOpen5
-                    ? 'arrow-active'
-                    : 'arrow-default'
-                if (isOpen5) {
-                    menu5.style.display = 'flex';
-                } else {
-                    menu5.style.display = 'none';
-                }
-                break;
-            default:
-                // Действия, выполняемые при отсутствии подходящего условия
-                break;
-        }
-
     }
 
 
