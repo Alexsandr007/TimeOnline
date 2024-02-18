@@ -1,0 +1,236 @@
+.container_center {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 1140px;
+    justify-content: space-between;
+}
+
+.block_information {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block_platforms {
+    position: relative;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    border-radius: 50px;
+    padding: 10px 25px;
+    background: rgba(255, 255, 255, 0.4);
+
+}
+
+.platform_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: solid 1px #000000;
+    width: auto;
+    height: 20px;
+    padding: 5px 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.platform_button:hover{
+    transform: scale(1.1);
+    background: linear-gradient(30deg, #C8C7C3 -50%, #953618 35%, #D37E00 65%, #C8C7C3 110%);
+}
+
+.platform_button.active{
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    background: linear-gradient(30deg, #C8C7C3 -50%, #953618 35%, #D37E00 65%, #C8C7C3 110%);
+}
+
+
+
+.block_tables {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding-right: 2px;
+    border-radius: 100%;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.table:hover{
+        color: black;
+    background: rgba(255, 255, 255, 0.5);
+    border: solid 1px #000000;
+    transform: scale(1.2);
+}
+
+.table.active{
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    border: solid 1px #000000;
+}
+
+.top_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom_cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.block_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_top {
+    width: auto;
+    height: auto;
+}
+
+.arrow_top img {
+    width: 50px;
+    transition: 0.3s;
+}
+
+.arrow_top img:hover {
+    transform: scale(1.2);
+}
+
+.arrow_down {
+    width: auto;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+.arrow_down img {
+    width: 50px;
+    transition: 0.3s;
+}
+
+.arrow_down img:hover {
+    transform: scale(1.2);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.05) 85%);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.card img {
+    width: 80px;
+}
+
+.card h4 {
+    margin: 5px;
+}
+
+.card p {
+    margin: 0px;
+}
+
+.block_action {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    padding: 20px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    height: auto;
+    width: 400px;
+}
+
+.block_action h4 {
+    margin: 5px 0px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 50px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+@media (max-width: 1210px) {
+
+    .main {
+        height: 125vh;
+    }
+
+    .container_center {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .block_action {
+        width: 96%;
+    }
+
+        .main {
+        height: 130vh;
+    }
+
+    .container_center {
+        width: 90%;
+    }
+
+    .card {
+        width: 220px;
+        height: 220px;
+    }
+
+    .table {
+        width: 40px;
+        height: 40px;
+        border: solid 2px #ffffff;
+    }
+
+    .platform_button {
+        font-size: 20px;
+    }
+}

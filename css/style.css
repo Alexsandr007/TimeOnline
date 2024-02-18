@@ -35,9 +35,8 @@ h5 {
 
 .main {
     position: relative;
-    width: 99vw;
+    width: 100vw;
     height: 99vh;
-    border-radius: 50px;
     background: linear-gradient(30deg, #C8C7C3 0%, #953618 35%, #D37E00 65%, #C8C7C3 85%);
     overflow: hidden;
 }
